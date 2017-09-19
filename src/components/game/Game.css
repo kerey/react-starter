@@ -1,0 +1,57 @@
+.board {
+  display: flex;
+  flex-direction: column;
+  width: 680px;
+  height: 420px; }
+  .board .cells {
+    display: flex;
+    width: 100%;
+    height: 80%; }
+    .board .cells .cell {
+      display: flex;
+      flex-direction: column;
+      width: 11.11111%;
+      height: 90%;
+      padding: 10px; }
+      .board .cells .cell .score {
+        order: 1;
+        text-align: center; }
+      .board .cells .cell .balls {
+        order: 2;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #000;
+        cursor: pointer; }
+      .board .cells .cell .id {
+        order: 3;
+        text-align: center; }
+  .board .overall-score {
+    display: flex;
+    width: 100%;
+    height: 20%;
+    border-top: 1px solid; }
+    .board .overall-score .center-score {
+      padding: 10px; }
+  .board .opponent-side {
+    width: 100%;
+    height: 50%;
+    border: 1px solid #000; }
+    .board .opponent-side .cells {
+      display: flex;
+      flex-direction: row-reverse; }
+  .board .own-side {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    border: 1px solid #000; }
+    .board .own-side .overall-score {
+      order: 1;
+      border: none;
+      border-bottom: 1px solid; }
+    .board .own-side .cells {
+      order: 2; }
+      .board .own-side .cells .cell .id {
+        order: 1; }
+      .board .own-side .cells .cell .score {
+        order: 3; }
