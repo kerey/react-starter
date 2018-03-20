@@ -9,10 +9,10 @@ class Main extends Component {
 	render(){
 		return(
 			<Switch>
-	      <Route exact path='/' component={Home}/>
-	      <Route exact path='/new-game' component={NewGame}/>
-	      <Route exact path='/game/:id' component={Game}/>
-	    </Switch>)
+				<Route exact path='/' component={Home}/>
+				<Route exact path='/new-game' component={NewGame}/>
+				<Route exact path='/game/:id' component={Game}/>
+			</Switch>)
 	}
 }
 
